@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.url">jdbc:mysql://localhost:3306/practice1</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">2587</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<mapping class="com.mt.hibernate3.model.Product"/>
+		<mapping class="com.mt.hibernate3.model.Order"/>
+		<mapping class="com.mt.hibernate3.model.OrderDetail"/>
+		<mapping class="com.mt.hibernate3.model.Payment" />
+		<mapping class="com.mt.hibernate3.model.OrderPayment" />
+		<mapping class="com.mt.hibernate3.model.Contact" />
+	</session-factory>
+</hibernate-configuration>
